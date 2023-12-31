@@ -118,5 +118,11 @@
         height: 110px;
         padding: 50px 0 30px 0;
     }
+    .main-title {
+        max-width: 280px;
+    }
+    .main-title2 {
+        max-width: 280px;
+    }
 
 }
