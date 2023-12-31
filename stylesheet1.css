@@ -1,0 +1,199 @@
+body {
+    background-color: rgb(56, 54, 54);
+    margin: 0;
+    padding: 0;
+    /*width:100%;
+    height: 100%;
+    /*overflow: auto; /* または overflow: scroll; */
+    /*min-height: 200vh; /* 画面の高さの200%に相当する高さの要素を表示 */
+}
+
+/*                                    ボタン設定*/
+a { /*ボタン初期設定*/
+    opacity: 0.5;
+}
+.btn:hover{ /*ボタン押下時*/
+    opacity: 1;
+}
+.btn-logo{ /*ロゴボタンのみ透明度排除(NEWSの画像部分も)*/
+    opacity: 1;
+}
+.btn-logo-news{ /*news部のロゴボタン透明度排除*/
+    opacity: 1;
+}
+.btn-logo-news:hover {
+    opacity: 0.6;
+}
+
+/*                                    リスト設定*/
+ul {
+    list-style: none;
+  }
+
+/*                                    ヘッダー */
+header { /*全ヘッダー共通設定*/
+    height:65px;
+    background-color: rgba(34, 39, 52, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%
+  }
+
+.header-right { /*ヘッダー右設定*/
+    float: right;
+}
+
+.fa-cart-shopping{ /*ヘッダー買い物ロゴ設定*/
+    font-size: 30px;
+    padding: 0 20px;
+    position: relative;
+    top: -47px; /*下に移動させる*/
+    color: white;
+}
+
+.header-logo { /*ロゴ文字*/
+    width:65px;
+    font-size: 19px;
+    vertical-align: middle; /* 中央揃えに調整 */
+    font-family: 'Homemade Apple', cursive;
+    color: rgb(255, 255, 255);
+    text-decoration: none; /* 下線を消す */
+}
+
+/*                                    MAIN部 */
+.main-header { /*メインのヘッダー*/
+    width: 100%;
+    height: 180px;
+    padding: 100px 0 30px 0;
+    background-image: url(https://prtimes.jp/i/9612/458/resize/d9612-458-179312-3.jpg);
+    background-size: cover; /*見切れるのを防ぐ*/
+    background-position: center; /*真ん中を表示*/
+    text-align: center;
+}
+
+.main-header h1 {
+    color: rgba(216, 221, 224, 0.9);
+    font-size: 20px;
+    font-family: 'Homemade Apple', cursive;
+}
+
+.login-logo { /*ログインボタン設定*/
+    text-decoration: none; /* 下線を消す */
+    padding: 8px 24px;
+    color: white;
+    opacity: 0.6;
+    background-color: #a9a9a9;
+    border-radius: 5px;
+    /*独立して移動*/
+    position: relative;
+    top: 20px; /*下に移動させる*/
+}
+
+.sign-in { /*サインインメッセージ*/
+    color: white;
+    opacity: 0.7;
+    /*独立して移動*/
+    position: relative;
+    top: 20px; /*下に移動させる*/
+}
+
+/*                                      メイン部のNEWSトピック*/
+.main- { 
+    height: 1700px;
+    background-color: rgb(56, 54, 54);
+    text-align: center; /* 親要素に対して横方向の中央配置 */
+}
+
+.main-title {
+    font-family: '游明朝 Medium', serif;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 100%;
+    padding-top: 10px;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    width: 100%; /* 親要素の幅いっぱいに広がるように */
+    max-width: 500px; /* 下線の最大幅を指定 */
+    margin: 0 auto; /* 左右にマージンを追加して中央に配置 */
+    margin-top: 10px; /* ヘッダーの高さを考慮した上部のマージンを追加 */
+    vertical-align: middle; /* 垂直方向の中央配置 */
+    text-align: center;
+}
+
+.news-topic { /*ニュースの画像部分*/
+    padding-top: 12px;
+    margin-left: 2%;
+    position: relative; /* 相対配置 */
+}
+
+.fa-play-right i { /*news-topic移動ボタン右*/
+    font-size: 50px;
+    color: rgb(10, 10, 10);
+    /*position: absolute; /* 絶対配置 */
+    top: 66%; /* 上からどのくらい下げる */
+    left: 80%; /* どのくらい右に寄せるか */
+    transform: translate(1287%, -279%); /* 中央揃え */
+}
+
+.fa-play-left i { /*news-topic移動ボタン左*/
+    font-size: 50px;
+    color: rgb(10, 10, 10);
+    /*position: absolute; /* 絶対配置 */
+    top: 66%; /* 上からどのくらい下げる */
+    left: 20%; /* どのくらい右に寄せるか */
+    /*transform: translate(-50%, -10%); /* 中央揃え */
+    transform: translate(-1220%, 309%) scaleX(-1); /* X軸方向に反転 */
+}
+
+/*                                      服、CATEGORY部*/
+.clothes {
+    font-size: 18px;
+    color: gray;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    text-decoration: none; /* 下線を消す */
+    display: inline-block;
+    padding: 8px 24px;
+}
+.main-title2 {
+    font-family: '游明朝 Medium', serif;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 100%;
+    padding-top: 0px;
+    text-align: center;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    display: inline-block;
+    width: 100%; /* 親要素の幅いっぱいに広がるように */
+    max-width: 500px; /* 下線の最大幅を指定 */
+    margin: 0 auto; /* 左右にマージンを追加して中央に配置 */
+    vertical-align: middle; /* 垂直方向の中央配置 */
+    text-align: center;
+}
+.clothes-img {
+    opacity: 0.9;
+    width: 330px;
+    margin: 30px 10px 10px 20px;
+}
+
+
+
+/*                                      フッター部*/
+.main-footer{
+    height: 1px;
+    background-color: rgb(56, 54, 54);
+}
+
+footer{
+    height: 170px;
+    background-color: rgb(35, 34, 34);
+    /*border-top: solid 2px rgb(0, 0, 0);*/
+}
+.footer-list{
+    text-align: right;
+    padding-top: 2px;
+}
+.footer{
+    color: white;
+    text-decoration: none; /* 下線を消す */
+    margin-right: 20px;
+}
