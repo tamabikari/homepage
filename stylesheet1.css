@@ -59,6 +59,7 @@ header { /*全ヘッダー共通設定*/
     font-family: 'Homemade Apple', cursive;
     color: rgb(255, 255, 255);
     text-decoration: none; /* 下線を消す */
+    padding-left: 1px;
 }
 
 /*                                    MAIN部 */
@@ -100,7 +101,7 @@ header { /*全ヘッダー共通設定*/
 
 /*                                      メイン部のNEWSトピック*/
 .main- { 
-    height: 1700px;
+    height: 1500px;
     background-color: rgb(56, 54, 54);
     text-align: center; /* 親要素に対して横方向の中央配置 */
 }
