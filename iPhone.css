@@ -99,7 +99,13 @@
         display: none;
     }
     .fa-cart-shopping {
-        display: none;
+        display: block;
+        position: absolute;
+        font-size: 23px;
+        top: 52%;
+        left: 93%;
+        transform: translate(-50%, -50%);/* 要素のサイズがわからない場合につける*/
+
     }
     .fa-play {
         display: none;
