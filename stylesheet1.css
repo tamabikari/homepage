@@ -1,3 +1,15 @@
+.sample-slider{
+    width:50%;
+    margin-bottom: 10px;
+}
+.sample-slider img{
+    width: 40%;
+    margin: 15px 0 30px 0;
+}
+.btn-logo-news {
+    display: none;
+}
+
 body {
     background-color: rgb(56, 54, 54);
     margin: 0;
