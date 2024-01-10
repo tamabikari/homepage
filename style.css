@@ -1,6 +1,5 @@
 .header__inner {
-  padding: 0 2px;
-  top: -0%;
+  top: -10%;
   display: flex;
   justify-content: space-between;
   height: inherit;
@@ -87,7 +86,7 @@
   display: none;
   text-align: center;
   font-size: 20px;
-  margin-bottom: 24px;
+  /*margin-bottom: 24px;*/
 }
 
 .nav-items__item:last-child a {
