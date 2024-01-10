@@ -109,8 +109,8 @@
     .clothes-img {
         opacity: 0.9;
         width: 30%;
-        margin: 30px 50px auto;
-        display: inline;
+        margin: 30px 5% auto;
+        display: inline-block;
     }
 
 }
