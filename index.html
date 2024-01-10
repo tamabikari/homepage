@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Butterfly</title>
     <!-- CSS読み込み -->
-    <link rel="stylesheet" href="stylesheet1.css">
-    <link rel="stylesheet" href="insta.css">
-    <link rel="stylesheet" href="line.css">
-    <link rel="stylesheet" href="iPhone.css">
-    <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="swiper-bundle.css">
-
+    <link rel="stylesheet" href="css/stylesheet1.css">
+    <link rel="stylesheet" href="css/insta.css">
+    <link rel="stylesheet" href="css/line.css">
+    <link rel="stylesheet" href="css/iPhone.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/swiper-bundle.css">
+    <link rel="stylesheet" href="css/menuber.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/iPhone-humberger-menu.css">
+    
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <!-- CDN読み込み -->
@@ -20,6 +24,8 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>  
+    
     
     <!-- フォント -->
     <link href="https://fonts.googleapis.com/css?family=Homemade+Apple" rel="stylesheet">
@@ -45,12 +51,23 @@
         <div class="iPhone-header">
           <a href="#">古着butterfy</a>
         </div>
-        <div class="menu-hamburger">
-            <div id="hamburger">
-              <span></span>
-            </div>
-       </div>
-    
+
+        <!-- ハンバーガメニュー -->
+        <div class="header__inner">
+          <nav class="header__nav nav" id="js-nav">
+            <ul class="nav__items nav-items">
+              <li class="nav-items__item"><a href="">メニュー</a></li>
+              <li class="nav-items__item"><a href="">メニュー</a></li>
+              <li class="nav-items__item"><a href="">メニュー</a></li>
+              <li class="nav-items__item"><a href="">メニュー</a></li>
+            </ul>
+          </nav>
+          <button class="header__hamburger hamburger" id="js-hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
     </header>
     
     <div class="main-header"> <!-- メイン部のヘッダー -->
@@ -73,8 +90,8 @@
                   <div class="swiper-slide"><img src="https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper3.png"></div>
                   <div class="swiper-slide"><img src="https://baseec-img-mng.akamaized.net/images/item/origin/04d0d7ddddf9e67ce541d7390a47677c.jpg?imformat=generic&q=90&im=Resize,width=640,type=normal"></div>
               </div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"><i class="fa-solid fa-play"></i></div>
+              <div class="swiper-button-next"><i class="fa-solid fa-play"></i></div>
               <div class="swiper-pagination"></div>
           </div>            
           <div class="fa-play-right">
@@ -116,6 +133,8 @@
     </footer>
     
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>  
     </body>
     </html>
