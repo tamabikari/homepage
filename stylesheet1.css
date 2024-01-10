@@ -2,13 +2,16 @@
 .swiper-button-next:after {
  display: none;
 }
-.swiper-button-next {
-    background: url(https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper3.png)no-repeat center center / contain;
-    transform: scaleX(-1);
+.swiper-button-next i {
+    color: bisque;
+    font-size: 130%;
+    margin-left: -90px;
 }
-.swiper-button-prev {
-    background: url(https://haniwaman.com/cms/wp-content/uploads/2018/05/swiper3.png)no-repeat center center / contain;
-
+.swiper-button-prev i {
+    color: bisque;
+    scale: -1;
+    font-size: 130%;
+    margin-right: -90px;
 }
 
 
