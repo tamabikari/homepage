@@ -15,54 +15,8 @@
     font-family: 'Noto Serif JP', sans-serif;
 }
 
-/* メニューバー */
-#hamburger {
-    position: relative;
-    display: block;
-    width: 30px;
-    height: 25px;
-    margin: -37px 0px 0 8px;
- }
- #hamburger span {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    display: block;
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
-    transform: translateY(-50%);
- }
- #hamburger::before {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
- }
- #hamburger::after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 1px;
-    background-color: #fff;
- } 
-
 /* レスポンシブ */
 @media (max-width: 599px) {
-    .menu-hamburger {
-        display: block;
-        position: absolute;
-        top: 100%;
-        left: 5%;
-        transform: translate(-50%, -50%);/* 要素のサイズがわからない場合につける*/
-    }
     body {
       width: 100%
     }
@@ -71,7 +25,7 @@
       height:45px;
     }
     .iPhone-header {
-        display: block;
+      display: block;
     }
     .main-header {
       width: 100%;
@@ -105,7 +59,6 @@
         top: 52%;
         left: 93%;
         transform: translate(-50%, -50%);/* 要素のサイズがわからない場合につける*/
-
     }
     .fa-play {
         display: none;
@@ -141,5 +94,13 @@
     .clothes {
         opacity: 0.7;
     }
-
+    .sample-slider{
+        width:80%;
+    }
+    .swiper-button-next i {
+        margin-left: -50px;
+    }
+    .swiper-button-prev i {
+        margin-right: -50px;
+    }
 }
